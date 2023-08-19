@@ -17,6 +17,11 @@ body::-webkit-scrollbar{
 }
 
 @font-face {
+    font-family: jakartaSansbold;
+    src: url(font/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
     font-family: poppins;
     src: url(font/Poppins-Light.otf);
 }
@@ -27,7 +32,7 @@ body::-webkit-scrollbar{
 
 .container{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: linear-gradient(to right top, #00bcf2, #00bce0, #00baca, #00b7b0, #00b294);
 }
 
@@ -65,16 +70,8 @@ body::-webkit-scrollbar{
     align-items: center;
 }
 
-.boxHead{
-    margin-top: 30px;
-    width: 75vw;
-    height: 55px;
-    background-color: white;
-    border-radius: 27px;
-}
-
 .box{
-    margin-top: 20px;
+    margin-top: 30px;
     width: 75vw;
     height: 55px;
     background-color: white;
@@ -83,11 +80,69 @@ body::-webkit-scrollbar{
 }
 
 .box:hover{
-    transform: scale(1.03);
+    transform: scale(1.015);
 }
+
+.box1 > h1{
+    font-family: jakartaSansbold;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.box2 > h1{
+    font-family: jakartaSansbold;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.box3 > h1{
+    font-family: jakartaSansbold;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.box4 > h1{
+    font-family: jakartaSansbold;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.box5 > h1{
+    font-family: jakartaSansbold;
+    text-align: center;
+    margin-top: 12px;
+}
+
+
+/* responsive mobile */
 
 @media only screen and (max-width: 600px){
     .header > img{
         width: 100px;
+    }
+
+    /* text inside box */
+    .box1 > h1{
+        font-size: 15px;
+    }
+    .box2 > h1{
+        font-family: jakartaSansbold;
+        text-align: center;
+        margin-top: 12px;
+    }
+    .box3 > h1{
+        font-family: jakartaSansbold;
+        text-align: center;
+        margin-top: 12px;
+    }
+    .box4 > h1{
+        font-family: jakartaSansbold;
+        text-align: center;
+        margin-top: 12px;
+    }
+    .box5 > h1{
+        font-family: jakartaSansbold;
+        text-align: center;
+        margin-top: 12px;
     }
 }
