@@ -1,3 +1,21 @@
+/* importing required font */
+@font-face {
+    font-family: jakartaSans;
+    src: url(font/PlusJakartaSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: jakartaSansbold;
+    src: url(font/Poppins-Thin.otf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(font/Poppins-Light.otf
+    );
+}
+
+
 /* flat template without scrollbar */
 *{
     margin: 0;
@@ -9,29 +27,11 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-
-/* importing required font */
-@font-face {
-    font-family: jakartaSans;
-    src: url(font/PlusJakartaSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: jakartaSansbold;
-    src: url(font/PlusJakartaSans-Bold.ttf);
-}
-
-@font-face {
-    font-family: poppins;
-    src: url(font/Poppins-Light.otf);
-}
-
-
-
 /* styling web */
 
 .container{
     width: 100%;
+    /* set back to 110vh */
     height: 110vh;
     background-image: linear-gradient(to right top, #00bcf2, #00bce0, #00baca, #00b7b0, #00b294);
 }
@@ -70,79 +70,203 @@ body::-webkit-scrollbar{
     align-items: center;
 }
 
-.box{
+.boxWrapper a{
+    text-decoration: none;
+}
+
+
+.boxTop{
+    cursor: pointer;
     margin-top: 30px;
-    width: 75vw;
+    width: 50vw;
     height: 55px;
-    background-color: white;
-    border-radius: 27px;
+    border: 2px solid white;
+    border-radius: 28px;
     transition: all .2s;
 }
 
+
+.box{
+    cursor: pointer;
+    margin-top: 17px;
+    width: 50vw;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 28px;
+    transition: all .2s;
+}
+
+
 .box:hover{
-    transform: scale(1.015);
+    transform: scale(1.020);
+}
+
+.boxTop:hover{
+    transform: scale(1.020);
 }
 
 .box1 > h1{
+    font-size: 20px;
     font-family: jakartaSansbold;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .box2 > h1{
+    font-size: 20px;
     font-family: jakartaSansbold;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .box3 > h1{
+    font-size: 20px;
     font-family: jakartaSansbold;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .box4 > h1{
+    font-size: 20px;
     font-family: jakartaSansbold;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .box5 > h1{
+    font-size: 20px;
     font-family: jakartaSansbold;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 1px;
 }
 
+/* social media section */
+
+.socialWrapper{
+    display: block;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20vw;
+    height: 15vh;
+    /* background-color: black; */
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.socialMedia > a{
+    text-decoration: none;
+}
+
+.socialMedia > a > img{
+    width: 50px;
+    height: 50px;
+    transition: all .2s;
+}
+
+.socialMedia > a > img:hover{
+    transform: scale(1.1);
+}
+
+/* footer section */
+
+.footer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 75px;
+    background-image: url(icons/linkpohon1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /* responsive mobile */
 
 @media only screen and (max-width: 600px){
+
+    /* header section */
     .header > img{
         width: 100px;
     }
 
+    .header > h1{
+        font-size: 20px;
+    }
+
+    .header > p{
+        font-size: 12px;
+    }
+
+
+    /* box section */
+    .boxTop{
+        cursor: pointer;
+        margin-top: 30px;
+        width: 90vw;
+        height: 55px;
+        border: 2px solid white;
+        border-radius: 28px;
+        transition: all .2s;
+    }
+
+    .box{
+        cursor: pointer;
+        margin-top: 17px;
+        width: 90vw;
+        height: 55px;
+        border: 2px solid white;
+        border-radius: 28px;
+        transition: all .2s;
+    }
+    
     /* text inside box */
     .box1 > h1{
-        font-size: 15px;
+        padding-top: 2.5px;
+        font-size: 17px;
     }
     .box2 > h1{
-        font-family: jakartaSansbold;
-        text-align: center;
-        margin-top: 12px;
+        padding-top: 2.5px;
+        font-size: 17px;
     }
     .box3 > h1{
-        font-family: jakartaSansbold;
-        text-align: center;
-        margin-top: 12px;
+        padding-top: 2.5px;
+        font-size: 17px;
     }
     .box4 > h1{
-        font-family: jakartaSansbold;
-        text-align: center;
-        margin-top: 12px;
+        padding-top: 2.5px;
+        font-size: 17px;
     }
+ 
     .box5 > h1{
-        font-family: jakartaSansbold;
-        text-align: center;
-        margin-top: 12px;
+        padding-top: 2.5px;
+        font-size: 17px;
     }
+
+    /* social media */
+    .socialMedia > a > img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer{
+        width: 175px;
+    }
+
 }
